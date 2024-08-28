@@ -1,2 +1,3 @@
-# nMap
-A dart package that provides `!= null` map operation extension.
+# Dart Null Map
+
+A dart package that provides `!= null` map operation extension (null map).
