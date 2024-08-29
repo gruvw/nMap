@@ -1,6 +1,5 @@
-// TODO: Put public facing types in this file.
-
-/// Checks if you are awesome. Spoiler: you are.
-class Awesome {
-  bool get isAwesome => true;
+// https://github.com/dart-lang/language/issues/361
+extension NullMap<T> on T? {
+  R? nMap<R>(R? Function(T v) convert) =>
+      this == null ? null : convert(this as T);
 }
