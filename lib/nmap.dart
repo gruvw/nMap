@@ -1,8 +1,4 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
+/// A dart package that provides `!= null` map operation extension (null map, `nmap`).
 library;
 
-export 'src/nmap_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export "src/nmap_base.dart";

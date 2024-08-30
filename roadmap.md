@@ -4,6 +4,6 @@
 
 - [X] Code the actual extension
 - [ ] Write tests
-- [ ] Code documentation
+- [X] Code documentation
 - [ ] Write README
 - [ ] CI for release on pub.dev
