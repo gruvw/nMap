@@ -7,5 +7,5 @@
 - [X] Code documentation
 - [X] Write examples
 - [X] Write README
-- [ ] CI for push validation
+- [X] CI for push validation
 - [ ] CI for release on pub.dev
