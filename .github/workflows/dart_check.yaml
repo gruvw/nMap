@@ -1,12 +1,9 @@
 name: Dart Check CI
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
-  flutter-check:
+  dart-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

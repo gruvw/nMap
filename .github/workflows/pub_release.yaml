@@ -1,0 +1,11 @@
+name: Dart Pub Package GitHub Release
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  dart-pub-release:
+    permissions:
+      id-token: write # Required for authentication using OIDC
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
