@@ -12,6 +12,11 @@ extension NullMap<T> on T? {
   /// ```
   ///
   /// For more information: https://github.com/dart-lang/language/issues/361
-  R? nmap<R>(R Function(T v) convert) =>
-      this == null ? null : convert(this as T);
+  R? nmap<R>(R Function(T v) convert) {
+    // required for type promotion, only on local variables
+    // for more information: https://github.com/dart-lang/language/issues/1188
+    final t = this;
+
+    return t == null ? null : convert(t);
+  }
 }
