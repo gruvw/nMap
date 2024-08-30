@@ -1,11 +1,11 @@
 # Dart Null Map Roadmap
 
-## v0.0.1
+## v1.0.0
 
 - [X] Code the actual extension
 - [X] Write tests
 - [X] Code documentation
 - [X] Write examples
-- [ ] Write README
+- [X] Write README
 - [ ] CI for push validation
 - [ ] CI for release on pub.dev

@@ -1,29 +1,19 @@
 # Dart Null Map
 
-A dart package that provides `!= null` map operation extension (null map).
+A dart package that provides `!= null` map operation extension (null map, `nmap`).
 
-<!-- TODO finish readme, use dart template -->
+The null map operator applies the passed `convert` function on receiver if it is not `null`, returns `null` otherwise.
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+**Note**: this package is a temporary solution to the open Dart lang issue <https://github.com/dart-lang/language/issues/361> while waiting for an actual language operator implementation.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+final int? a = null;
+final int b = 1;
+                                     
+print(a.nmap((n) => n + 1)); // null
+print(b.nmap((n) => n + 1)); // 2
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+See [implementation file](./lib/src/nmap_base.dart) for library source code.
