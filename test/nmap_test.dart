@@ -1,16 +1,24 @@
-import 'package:nmap/nmap.dart';
-import 'package:test/test.dart';
+import "package:nmap/src/nmap_base.dart";
+import "package:test/test.dart";
+
+int convert(int a) {
+  return a + 1;
+}
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
+  group("Basic null map operation", () {
+    test("Identity on null", () {
+      final int? a = null;
+      final res = a.nmap(convert);
 
-    setUp(() {
-      // Additional setup goes here.
+      expect(res, a);
     });
 
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+    test("Applies convert on non-null", () {
+      final int b = 1;
+      final res = b.nmap(convert);
+
+      expect(res, convert(b));
     });
   });
 }
