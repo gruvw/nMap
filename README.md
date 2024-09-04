@@ -2,6 +2,8 @@
 
 A dart package that provides `!= null` map operation extension (null map, `nmap`).
 
+**Check it out** (install) on pub.dev: <https://pub.dev/packages/nmap>
+
 The null map operator applies the passed `convert` function on receiver if it is not `null`, returns `null` otherwise.
 
 **Note**: this package is a temporary solution to the open Dart lang issue <https://github.com/dart-lang/language/issues/361> while waiting for an actual language operator implementation.
